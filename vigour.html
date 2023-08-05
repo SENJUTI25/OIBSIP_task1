@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VIGOUR GYM</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,300&family=Roboto:wght@300&display=swap");
+    </style>
+    <style>
+      body {
+        font-family: "Josefin Sans", sans-serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url(img/wp2639533-gym-wallpaper-hd.jpg)no-repeat center center/cover;
+      }
+      .left {
+        position: absolute;
+        left: 44px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid red; */
+      }
+      .left img {
+        width: 90px;
+        filter: invert(100%);
+      }
+      .left div {
+        line-height: 15px;
+        text-align: center;
+      }
+      .mid {
+        display: block;
+        width: 37%;
+        margin: 27px auto;
+        /* border: 2px solid green; */
+      }
+      .right {
+        position: absolute;
+        right: 34px;
+        top: 35px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+      }
+      .navbar {
+        display: inline-block;
+      }
+      .navbar li {
+        font-size: 15px;
+        display: inline-block;
+      }
+      .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 30px 19px;
+      }
+      .navbar li a:hover,
+      .navbar li a.active {
+        transition: all 1s;
+        text-decoration: underline;
+        color: #bebebe;
+      }
+      .btn {
+        font-family: "Josefin Sans", sans-serif;
+        margin: 0px 9px;
+        background-color: black;
+        color: antiquewhite;
+        padding: 3px 10px;
+        border: 2px solid gray;
+        border-radius: 23px;
+        font-size: 13px;
+        cursor: pointer;
+      }
+      .btn:hover {
+        transition: all 0.5s;
+        transform: scale(1.1);
+        background-color: rgb(58, 58, 58);
+      }
+      .container {
+        transition: all 0.5s;
+        font-family: "Josefin Sans", sans-serif;
+        border: 2px solid white;
+        margin: 93px 88px;
+        padding: 75px;
+        width: 27%;
+        border-radius: 243px;
+        box-shadow: 5px 5px 5px white;
+      }
+      .container:hover{
+        transition: all 0.5s;
+        transform: scale(1.1);
+      }
+      .form-group input {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 16px;
+        text-align: center;
+        display: block;
+        width: 375px;
+        padding: 4px;
+        border: 2px solid black;
+        margin: 11px auto;
+        border-radius: 20px;
+      }
+      .container h1 {
+        text-align: center;
+      }
+      .container button {
+        display: block;
+        width: 76px;
+        margin: 20px auto;
+      }
+      footer {
+        bottom: 0;
+        background-color: white;
+        color: black;
+        font-weight: bold;
+        font-style: italic;
+        height: 2rem;
+        font-size: 20px;
+      }
+      .center {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <!-- leftbox for logo -->
+      <div class="left">
+        <img src="img/logo.jpg.jpg" alt="" />
+        <div>VIGOUR</div>
+      </div>
+      <!-- midbox for navbar -->
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Fitness Center</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <!--right box for buttons  -->
+      <div class="right">
+        <button class="btn">Log In</button>
+        <button class="btn">Sign In</button>
+      </div>
+    </header>
+    <div class="container">
+      <h1>Join us now</h1>
+      <form action="noaction.php">
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Name" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Age" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Gender" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Locality" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Phone No" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Email ID" />
+        </div>
+        <button class="btn">Submit</button>
+      </form>
+    </div>
+    <footer>
+      <div class="center">
+        Copyright &copy; www.vigourGym.com. All rights reserved!
+      </div>
+    </footer>
+  </body>
+</html>
